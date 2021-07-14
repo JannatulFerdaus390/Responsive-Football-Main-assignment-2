@@ -1,14 +1,31 @@
-/*-----------------------
+/*-------------------------------------
  styles in fonts
- ---------------------- */
+ ---------------------------------- */
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
     background: #000000;
 }
-/*---------------------
+/* ----------------------------------
+styles in Main body
+------------------------------------- */
+h1{
+    font-size: 30px;
+    color: darkslategray;
+    padding-left:20px ;
+
+}
+section{
+   width: 1500px;
+   margin-left:auto;
+   margin-right: auto;
+   background-color: cornsilk;
+   padding-top: 30px;
+}
+
+/*----------------------------------
  styles in header
- ---------------------- */
+ ----------------------------------- */
  header{
     background-color: blue;
     margin-left:auto;
@@ -68,15 +85,9 @@ body{
     margin-right: 141px;
     
 }
-/*----------------------------
- styles in body (list of players)
- ------------------------------ */
-section{
-    width: 1500px;
-    margin-left:auto;
-    margin-right: auto;
-    background-color: cornsilk;
-}
+/*--------------------------------
+ styles in list of players
+ -------------------------------- */
  .players{
      display: grid;
      grid-template-columns: repeat(3, 1fr);
@@ -115,7 +126,8 @@ section{
     margin: 10px 0px;
     text-align: justify;
 }
-/* styles in football jersy
+/*-----------------------------
+ styles in football jersy
 ----------------------------- */
 .jersy-album {
     display: grid;
@@ -134,9 +146,6 @@ section{
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
-}
-.photo{
-   
 }
 .photo img {
     width: 100%;
@@ -167,11 +176,40 @@ section{
         transform: scale(1.5) rotate(360deg);
         transition: transform 3s ease-in-out;
     }
-    
+/*------------------------------------
+ styles in log in content
+ -------------------------------------- */
+.login-content {
+    display: flex;
+    justify-content: center;
+}
 
-/*--------------------------
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input,
+button {
+    font-size: 1.3em;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color:lightgreen;
+    color: darkslategray;
+    font-weight: 400;
+    padding: 5px;
+    border: 0;
+
+}
+
+/*-------------------------------
  styles in footer content
----------------- */
+--------------------------------- */
 footer{
     margin-left:auto;
     margin-right: auto; 
@@ -206,3 +244,17 @@ footer{
     border-radius: 50%;
     
 }
+/*------------------------
+  Responsive Media quary
+------------------------- */
+@media only screen and (max: width 688px ){
+.container{
+width: 100%;
+}
+.players, .jersy-album .login-content {
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+}
+    
