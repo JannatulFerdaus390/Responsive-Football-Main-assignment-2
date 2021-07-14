@@ -4,7 +4,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
-    background: #000000;
+    background: cornsilk;
 }
 /* ----------------------------------
 styles in Main body
@@ -15,12 +15,13 @@ h1{
     padding-left:20px ;
 
 }
-section{
+.container{
    width: 1500px;
    margin-left:auto;
    margin-right: auto;
    background-color: cornsilk;
    padding-top: 30px;
+   padding-bottom: 15px
 }
 
 /*----------------------------------
@@ -35,7 +36,6 @@ section{
 .header-detail{
     display: flex;
     justify-content: center;
-    
     column-gap: 102px;
     padding-left:156px;
    
@@ -245,16 +245,35 @@ footer{
     
 }
 /*------------------------
-  Responsive Media quary
+  Responsive Media queries
 ------------------------- */
-@media only screen and (max: width 688px ){
+/*-----------------------
+ mobile device
+ ------------------------- */
+
+@media only screen and (max-width:688px ){
 .container{
-width: 100%;
+    width: 100%;
 }
-.players, .jersy-album .login-content {
-    grid-template-columns: repeat(1, 1fr);
+
+.players,  .jersy-album{
+   grid-template-columns: repeat(1, 1fr);
 
 }
 
 }
+/*--------------------------
+ tablet or ipad
+------------------------------- */
+@media only screen and (min-width:688px) and (max-width:992px){
+.container{
+    width: 100%;
+
+}
+.players, .jersy-album{
+    grid-template-columns: repeat(2, 2fr);
+}
+}
+    
+
     
