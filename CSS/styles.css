@@ -1,0 +1,86 @@
+/*-----------------------
+ styles in fonts
+ ---------------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+   
+}
+/*---------------------
+ styles in header
+ ---------------------- */
+ header{
+    background-color: blue;
+  
+ }
+.header-detail{
+    display: flex;
+    justify-content: center;
+    column-gap: 102px;
+    padding-left:156px;
+   
+}
+.header-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top:207px;
+    margin-bottom: 27px;
+}
+.header-button{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    width: 130px;
+    border-radius: 10px;
+    
+}
+.header-button a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.fa-arrow-right{
+    color: #FFFFFF;
+    margin-left: 8px;
+}
+.banner img{
+    width: 556px;
+    height: 438px;
+    margin-top: 153px;
+    margin-bottom: 86px;
+    margin-right: 141px;
+    
+}
+/*----------------------------
+ styles in body (list of players)
+ ------------------------------ */
+ .player{
+    width: 330px;
+    height: 474px;
+    padding: 15px ;
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    align-items: center;
+
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+ }
+.player-photo img{
+    width: 300px;
+    height: 256px;
+}
+.player-detail{
+    width: 300px;
+    height: 154px;
+}
+.player-name{
+    font-size: 28px;
+    color: #18191F;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.player-info{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin: 10px 0px;
+    text-align: justify;
+}
