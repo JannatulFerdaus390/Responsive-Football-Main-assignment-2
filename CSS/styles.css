@@ -35,13 +35,27 @@ body{
     background-color: #E02C6D;
     width: 130px;
     border-radius: 10px;
-    
+    animation: sliding 0.5s ease-in-out 1s infinite alternate;
+            animation-play-state: running;
 }
+@keyframes sliding{
+    0% {
+        background-color: purple;
+    }
+    50%{
+        background-color: rgb(3, 32, 31);
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+
 .header-button a {
     font-size: 16px;
     color: #FFFFFF;
     text-decoration: none;
-}
+}  
+
 .fa-arrow-right{
     color: #FFFFFF;
     margin-left: 8px;
@@ -59,7 +73,6 @@ body{
  ------------------------------ */
 section{
     width: 1500px;
-
     margin-left:auto;
     margin-right: auto;
     background-color: cornsilk;
@@ -71,11 +84,6 @@ section{
      grid-column-gap: 27px;
      margin-left: 180px;
      margin-right: 210px;
-     
-    
-   
-   
-    
  }
  .player{
     width: 330px;
@@ -107,6 +115,60 @@ section{
     margin: 10px 0px;
     text-align: justify;
 }
+/* styles in football jersy
+----------------------------- */
+.jersy-album {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1500px;
+    padding-top: 40px;
+}
+.jersy-photos{
+    
+        height: 250px;
+        width: 350px;
+        border: 2px solid goldenrod;
+        border-radius: 10px;
+        position: relative;
+        margin: 10px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+}
+.photo{
+   
+}
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-details {
+    display: none;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 0;
+}
+    .photo-details h3 {
+        background-color: darkgreen;
+        color: white;
+        text-align: center;
+    }
+
+    .photo-details p {
+        color: deeppink;
+    }
+    .jersy-photos:hover .photo-details {
+        display: block;
+        background-color: rgba(243, 204, 104, 0.5);
+    }
+
+    .jersy-photos:hover .photo {
+        transform: scale(1.5) rotate(360deg);
+        transition: transform 3s ease-in-out;
+    }
+    
+
 /*--------------------------
  styles in footer content
 ---------------- */
@@ -129,6 +191,7 @@ footer{
   color: gray; 
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 10px;
   
    
 }
